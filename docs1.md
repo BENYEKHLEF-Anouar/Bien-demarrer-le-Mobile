@@ -32,3 +32,7 @@ transférer des fichiers,
 afficher les logs,
 
 déboguer à distance via USB ou Wi-Fi.
+
+
+- Gradle est le système de build utilisé par Android Studio (et de nombreux autres projets Java/Kotlin).
+C’est un puissant outil open-source d’automatisation de build (build automation tool) qui gère et automatise des tâches de développement logiciel telles que la compilation du code, la gestion des dépendances externes, l’exécution des tests et le packaging des applications pour leur déploiement.
