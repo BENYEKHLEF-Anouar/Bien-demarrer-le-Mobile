@@ -1,2 +1,2 @@
 # Bien-demarrer-le-Mobile
-hahahahahahah
+Générer l’APK debug
