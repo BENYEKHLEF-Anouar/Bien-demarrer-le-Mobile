@@ -1,4 +1,4 @@
-# Hello Counter – APK Debug
+# HelloCounter – APK Debug
 
 ## Glossaire minute
 - **APK** : fichier installable d’une application Android.
