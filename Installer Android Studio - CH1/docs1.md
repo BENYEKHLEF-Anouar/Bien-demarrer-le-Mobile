@@ -23,15 +23,15 @@ platform-tools → utilitaires pour communiquer avec les appareils, dont ADB.
 
 - ADB (Android Debug Bridge) : Un outil en ligne de commande qui sert à se connecter à un appareil Android (réel ou émulé). On peut :
 
-installer/désinstaller des APK,
+   installer/désinstaller des APK,
 
-lancer des apps,
+   lancer des apps,
 
-transférer des fichiers,
+   transférer des fichiers,
 
-afficher les logs,
+  afficher les logs,
 
-déboguer à distance via USB ou Wi-Fi.
+  déboguer à distance via USB ou Wi-Fi.
 
 
 - Gradle est le système de build utilisé par Android Studio (et de nombreux autres projets Java/Kotlin).
