@@ -14,12 +14,11 @@ import androidx.compose.ui.res.stringResource
 import com.solicode.hellocounter.R
 import androidx.compose.runtime.saveable.rememberSaveable
 
-
 @Composable
 fun CompteurSection(modifier: Modifier = Modifier) {
     var count by rememberSaveable { mutableStateOf(0) }
 
-    // Préparer les textes a11y dans le contexte @Composable
+    // Préparer les textes a11y
     val decrementCd = stringResource(R.string.cd_decrement)
     val incrementCd = stringResource(R.string.cd_increment)
     val counterCd   = stringResource(R.string.cd_counter_value, count)
@@ -37,6 +36,7 @@ fun CompteurSection(modifier: Modifier = Modifier) {
             horizontalArrangement = Arrangement.spacedBy(12.dp),
             modifier = Modifier.fillMaxWidth()
         ) {
+            // --- Decrement button ---
             IconButton(
                 onClick = { if (count > 0) count-- },
                 enabled = count > 0,
@@ -47,6 +47,7 @@ fun CompteurSection(modifier: Modifier = Modifier) {
                 Icon(Icons.Filled.Remove, contentDescription = null)
             }
 
+            // --- Counter value ---
             Text(
                 text = "$count",
                 style = MaterialTheme.typography.headlineSmall,
@@ -55,6 +56,7 @@ fun CompteurSection(modifier: Modifier = Modifier) {
                     .semantics { contentDescription = counterCd }
             )
 
+            // --- Increment button (FIXED) ---
             IconButton(
                 onClick = { count++ },
                 modifier = Modifier
